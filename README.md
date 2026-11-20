@@ -27,10 +27,10 @@ products	4	no category field
 The raw CSV files were supplied by AnalystLab Africa and are not included in this repository.
 
 Workflow
-Data understanding and preparation: field review, keys and relationships, quality checks and cleaning steps (docs/task1_data_understanding_and_preparation.md).
-SQL analysis: ten business questions in sql/week2_analysis.sql.
-Power BI dashboard: KPIs, revenue trend, products, marketing channels, devices, refunds and slicers (powerbi/). Build notes, measures and model are in docs/week2_powerbi_and_insights.md.
-Business insights: seven findings with recommendations (in the PDF report and docs/week2_powerbi_and_insights.md).
+Data understanding and preparation: field review, keys and relationships, quality checks and cleaning steps (task1_data_understanding_and_preparation.md).
+SQL analysis: ten business questions in week2_analysis.sql.
+Power BI dashboard: KPIs, revenue trend, products, marketing channels, devices, refunds and slicers (the .pbix file). Build notes, measures and model are in week2_powerbi_and_insights.md.
+Business insights: seven findings with recommendations (in the PDF report and week2_powerbi_and_insights.md).
 Data preparation summary
 No duplicate rows, duplicate keys or orphan foreign keys in any table. Order revenue equals the sum of item revenue for every order.
 Dates were stored as text and converted to date-time.
@@ -65,16 +65,19 @@ There is no marketing spend data, so channel comparisons use conversion and reve
 The SQL answers were also verified with an independent Python calculation.
 How to reproduce
 Load the six CSV files into a MySQL database (tables named as in the table above).
-Convert each created_at text column to DATETIME (see the header of sql/week2_analysis.sql).
-Run sql/week2_analysis.sql.
-Open powerbi/Maven_Fuzzy_Factory_Dashboard.pbix in Power BI Desktop and point the file sources to your copies of the CSVs.
-Repository structure
-README.md
-sql/       week2_analysis.sql
-docs/      task1_data_understanding_and_preparation.md
-           week2_powerbi_and_insights.md
-           Week2_Analytical_Report.pdf
-powerbi/   Maven_Fuzzy_Factory_Dashboard.pbix, dashboard screenshots
+Convert each created_at text column to DATETIME (see the header of week2_analysis.sql).
+Run week2_analysis.sql.
+Open the .pbix file in Power BI Desktop and point the file sources to your copies of the CSVs. The optional theme file is Maven_Fuzzy_Factory_Theme.json (View > Themes > Browse for themes).
+Repository contents
+File	What it is
+README.md	this overview
+week2_analysis.sql	SQL answers to the ten business questions
+task1_data_understanding_and_preparation.md	data understanding, quality checks and cleaning steps
+week2_powerbi_and_insights.md	Power BI model, measures, dashboard layout and business insights
+Week2_Analytical_Report.pdf	analytical report (PDF)
+.pbix file	Power BI dashboard
+Maven_Fuzzy_Factory_Theme.json	Power BI theme used for the dashboard
+Dashboard screenshot.png	screenshot of the dashboard
 Author
 
 Thando Kheswa | Johannesburg, South Africa
