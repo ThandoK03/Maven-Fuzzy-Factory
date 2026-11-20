@@ -1,0 +1,88 @@
+{
+  "name": "Maven Fuzzy Factory",
+  "dataColors": [
+    "#1F5FA8",
+    "#D9822B",
+    "#1B3A5C",
+    "#6FA3D8",
+    "#9AA5B1",
+    "#2E8B57",
+    "#C0392B",
+    "#7A5C99"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#1B3A5C",
+  "tableAccent": "#1F5FA8",
+  "good": "#2E8B57",
+  "neutral": "#D9822B",
+  "bad": "#C0392B",
+  "maximum": "#1B3A5C",
+  "center": "#6FA3D8",
+  "minimum": "#DCE6F2",
+  "textClasses": {
+    "title": {
+      "fontSize": 13,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#1B3A5C"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#44566B"
+    },
+    "callout": {
+      "fontSize": 26,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#1B3A5C"
+    },
+    "header": {
+      "fontSize": 11,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#1B3A5C"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "show": true,
+            "fontColor": { "solid": { "color": "#1B3A5C" } },
+            "fontSize": 12,
+            "fontFamily": "Segoe UI Semibold"
+          }
+        ],
+        "subTitle": [
+          {
+            "fontColor": { "solid": { "color": "#6B7A8C" } },
+            "fontSize": 9
+          }
+        ],
+        "background": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#FFFFFF" } },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#D9E0E8" } },
+            "radius": 6
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": { "solid": { "color": "#F2F5F9" } },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}
